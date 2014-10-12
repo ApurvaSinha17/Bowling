@@ -20,7 +20,7 @@ public class Game {
         Calculation calculation = new Calculation();
         calculation.scoreCalculation(inputList);
         System.setOut(orig);
-        System.out.println("Done");
+        System.out.println("Done Thank You");
 		}
 	catch(FileNotFoundException fe){
 		System.out.println("File Not Found");
