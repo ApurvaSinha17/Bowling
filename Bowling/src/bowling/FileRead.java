@@ -30,7 +30,8 @@ public class FileRead {
 			person.setName(name);
 			person.setScore(score);
 			inputList.add(person);
-		}		
+		}
+		reader.close();
 		return inputList;
 	}
 }
