@@ -17,11 +17,12 @@ public class Game {
 		FileWrite outputWrite = new FileWrite();
 		PrintStream orig = System.out;
 		outputWrite.fileWrite(outputFile);
-        Calculation calculation = new Calculation();
-        calculation.scoreCalculation(inputList);
-        System.setOut(orig);
-        System.out.println("Done Thank You");
-		}
+        	Calculation calculation = new Calculation();
+        	calculation.scoreCalculation(inputList);
+        	System.setOut(orig);
+        	System.out.println("Done Thank You");
+        	outputWrite.fileClose();
+	}
 	catch(FileNotFoundException fe){
 		System.out.println("File Not Found");
 	}
@@ -29,5 +30,4 @@ public class Game {
 		System.out.println(e.getStackTrace());
 	}
 	}
-
 }
